@@ -1,0 +1,25 @@
+.banner {
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://i.postimg.cc/ZqBqKqXH/banner.webp");
+}
+
+.bannerHeader {
+    color: rgb(213, 221, 230);
+    font-weight: 900;
+    padding-top: 6%;
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner img {
+        height: 50%;
+    }
+
+    #hura {
+        width: 100%;
+    }
+}

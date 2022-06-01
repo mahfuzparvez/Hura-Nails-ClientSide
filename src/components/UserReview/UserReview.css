@@ -1,0 +1,28 @@
+.header {
+    background-image: url('https://i.postimg.cc/44Hq10CD/bernner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+    width: 100%;
+    height: 450px;
+    padding-top: 3%;
+}
+
+#fullWidth {
+    width: 576px;
+}
+
+#filled-multiline-static {
+    width: 576px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #fullWidth {
+        width: 300px;
+    }
+
+    #filled-multiline-static {
+        width: 300px;
+    }
+
+}

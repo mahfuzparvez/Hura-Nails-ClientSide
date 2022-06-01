@@ -1,0 +1,41 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    box-shadow: 0 0 15px gray;
+}
+
+.card img {
+    height: 325px;
+    width: 250px;
+}
+
+.cardContent {
+    background-color: rgb(231, 226, 226);
+    height: 285px;
+    width: 220px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .card {
+        height: 300px;
+        width: 300px;
+    }
+
+    .card img {
+        height: 100%;
+        width: 200px;
+    }
+
+    .cardContent {
+        margin-left: -30px;
+        margin-top: -20px;
+        height: 100%;
+        width: 100px;
+    }
+
+    .text {
+        display: none;
+    }
+}

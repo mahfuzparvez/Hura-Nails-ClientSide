@@ -1,0 +1,82 @@
+.form {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(238, 235, 231);
+}
+
+#submit {
+    font-weight: 900;
+    color: white;
+    padding: 15px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+#submit:hover {
+    font-weight: 900;
+    color: black;
+    padding: 15px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    background-color: rgb(238, 235, 231);
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.socialMedia {
+    background-color: cadetblue;
+    padding: 3%;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.socialMedia a:hover {
+    color: white;
+    font-size: 15px;
+}
+
+.socialMedia button {
+    margin-right: 30px;
+    font-weight: 900;
+    border: 2px solid cadetblue;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.socialMedia button:hover {
+    margin-right: 30px;
+    font-weight: 900;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: cadetblue;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .contactImg {
+        width: 100%;
+        height: auto;
+    }
+
+    #fullWidth {
+        width: 250px;
+    }
+
+}

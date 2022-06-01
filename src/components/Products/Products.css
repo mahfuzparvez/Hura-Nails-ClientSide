@@ -1,0 +1,10 @@
+@media only screen and (max-width: 480px) {
+
+    .text {
+        display: none;
+    }
+
+    .bannerh1 {
+        height: 260px;
+    }
+}
