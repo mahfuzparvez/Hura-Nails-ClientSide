@@ -5,7 +5,7 @@ import './ManageOrders.css';
 const ManageOrders = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://whispering-crag-53712.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])

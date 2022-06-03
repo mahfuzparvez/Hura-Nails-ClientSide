@@ -20,7 +20,7 @@ const UserReview = () => {
             ...reviewInfo,
         };
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://whispering-crag-53712.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

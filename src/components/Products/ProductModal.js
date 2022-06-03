@@ -12,7 +12,6 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 450,
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
@@ -44,7 +43,7 @@ const ProductModal = ({ product }) => {
             Status,
             serviceName: productName,
         }
-        fetch('http://localhost:5000/orders', {
+        fetch('https://whispering-crag-53712.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -72,8 +71,8 @@ const ProductModal = ({ product }) => {
             >
                 <Box className="mainbox" sx={style}>
                     <Box className="child1">
-                        <img style={{ height: "50%", width: "50%" }} src={imageUrl} alt="" />
-                        <Typography style={{ marginBottom: "-15px" }} id="modal-modal-title" variant="h6" component="h4">
+                        <img src={imageUrl} alt="" />
+                        <Typography style={{ marginBottom: "-20px" }} id="modal-modal-title" variant="h6" component="h4">
                             {productName}
                         </Typography>
                         <Typography id="modal-modal-description" sx={{ my: 2 }}>
@@ -100,7 +99,7 @@ const ProductModal = ({ product }) => {
                                 onBlur={handleOnBlur} />
                         </Box>
                         <br />
-                        <Button type="submit" variant="contained">Order Conform</Button>
+                        <Button id="btn" type="submit" variant="contained">Order Conform</Button>
                     </form>
                 </Box>
             </Modal>

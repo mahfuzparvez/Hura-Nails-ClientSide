@@ -32,7 +32,7 @@ const h4 = {
 const Products = () => {
     const [product, setProduct] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://whispering-crag-53712.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])

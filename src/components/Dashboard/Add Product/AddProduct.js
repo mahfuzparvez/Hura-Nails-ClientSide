@@ -17,7 +17,7 @@ const AddProduct = () => {
             ...productInfo,
         };
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://whispering-crag-53712.herokuapp.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
