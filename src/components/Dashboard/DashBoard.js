@@ -15,15 +15,12 @@ import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 
 const drawerWidth = 240;
-
 function ResponsiveDrawer(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
-
     const drawer = (
         <div>
             <List>
@@ -32,9 +29,7 @@ function ResponsiveDrawer(props) {
                         <ListItemButton>
                             <ListItemIcon>
                                 <Link style={{ textDecoration: 'none' }} to={`/${text}`}>{text}</Link>
-                                {/* {index % 2 === 0 ? <InboxIcon /> : <MailIcon />} */}
                             </ListItemIcon>
-                            {/* <ListItemText primary={text} /> */}
                         </ListItemButton>
                     </ListItem>
                 ))}
