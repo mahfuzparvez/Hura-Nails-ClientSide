@@ -25,7 +25,7 @@ const ContactUs = () => {
             </div>
             <Container style={{ marginTop: "160px", marginBottom: "50px" }}>
                 <h3 style={{ color: 'rgba(2, 30, 50)', fontWeight: '700', fontSize: '30px' }}>Fill out the form below to contact us</h3>
-                <Grid container spacing={2}>
+                <Grid container>
                     <Grid item sm={12} lg={6}>
                         <img className='contactImg' src="https://i.postimg.cc/BQXHr0xj/Adobe2-removebg-preview.png" alt="" />
                     </Grid>
@@ -33,19 +33,20 @@ const ContactUs = () => {
                         <form onSubmit={formSubmit} >
                             <div className='form'>
                                 <div>
-                                    <TextField id="fullWidth" label="First Name" fullWidth />
+                                    <TextField className="contactText" id="fullWidth" label="First Name" fullWidth />
                                     <br />
                                     <br />
-                                    <TextField id="fullWidth" label="Last Name" fullWidth />
+                                    <TextField className="contactText" id="fullWidth" label="Last Name" fullWidth />
                                     <br />
                                     <br />
-                                    <TextField id="fullWidth" label="Email" fullWidth />
+                                    <TextField className="contactText" id="fullWidth" type="email" label="Email" fullWidth />
                                     <br />
                                     <br />
-                                    <TextField id="fullWidth" label="Phone" fullWidth />
+                                    <TextField className="contactText" id="fullWidth" type="number" label="Phone" fullWidth />
                                     <br />
                                     <br />
                                     <TextField
+                                        className="contactText"
                                         id="filled-multiline-static"
                                         label="Your Massege"
                                         multiline
@@ -53,13 +54,14 @@ const ContactUs = () => {
                                         variant="filled"
                                         style={{ width: '100%' }}
                                     />
+                                    <br />
+                                    <br />
+                                    <input
+                                        id="submit"
+                                        type="submit"
+                                        value="Send Message"
+                                    />
                                 </div>
-                                <br />
-                                <input
-                                    id="submit"
-                                    type="submit"
-                                    value="Send Message"
-                                />
                             </div>
                         </form>
                     </Grid>

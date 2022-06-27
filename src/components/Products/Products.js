@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Grid } from '@mui/material';
-import bg from '../../image/female5.jpg';
 import './Products.css';
 import SingleProduct from './SingleProduct';
 
 const appointmentBg = {
-    background: `url(${bg})`,
+    background: `url('https://wallpaperaccess.com/full/1917082.jpg')`,
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '100% 450px',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
     width: '100%',
-    height: '450px',
+    height: '550px',
     marginBottom: '20px'
 };
 

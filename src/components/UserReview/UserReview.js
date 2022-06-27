@@ -49,8 +49,8 @@ const UserReview = () => {
                 <h2 style={{ color: 'rgba(2, 30, 50)', fontWeight: '800', marginTop: '10px' }}>Fill out the form below for review</h2>
                 <Grid container spacing={2}>
                     <Grid item sm={12} lg={12}>
-                        <form onSubmit={formSubmit} >
-                            <TextField id="fullWidth" label="Please click this text but don't edit"
+                        <form onSubmit={formSubmit}>
+                            <TextField id="fullWidth" className="specialField" label="Please click this text but don't edit"
                                 name="photoUrl"
                                 defaultValue={user.photoURL}
                                 onBlur={handleOnBlur} />
@@ -72,6 +72,7 @@ const UserReview = () => {
                             <br />
                             <TextField
                                 id="filled-multiline-static"
+                                className="specialField2"
                                 label="Description"
                                 multiline
                                 rows={4}

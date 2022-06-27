@@ -5,6 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Rating from '@mui/material/Rating';
 import { styled } from '@mui/material/styles';
+import './Review.css';
 
 const settings = {
     dots: true,
@@ -59,6 +60,7 @@ const Review = () => {
     }, [])
     return (
         <div>
+            <div className="background"></div>
             <Container>
                 <h2 style={{ color: 'rgba(2, 30, 50)', fontWeight: '800', marginTop: '40px' }}>OUR CUSTOMERS REVIEW</h2>
                 <Slider {...settings}>

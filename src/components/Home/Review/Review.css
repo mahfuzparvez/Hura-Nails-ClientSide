@@ -1,0 +1,8 @@
+.background {
+    background-image: url('https://i.pinimg.com/originals/bf/b8/51/bfb8516ec84fb630a00fd030d36087b4.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

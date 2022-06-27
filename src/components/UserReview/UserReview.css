@@ -7,8 +7,8 @@
     padding-top: 3%;
 }
 
-#fullWidth {
-    width: 576px;
+.specialField {
+    width: 604px;
 }
 
 #filled-multiline-static {
@@ -17,12 +17,16 @@
 
 @media only screen and (max-width: 480px) {
 
-    #fullWidth {
-        width: 300px;
+    .specialField {
+        width: auto;
     }
 
     #filled-multiline-static {
-        width: 300px;
+        width: auto;
+    }
+
+    .specialField2 {
+        width: 100%;
     }
 
 }
